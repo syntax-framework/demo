@@ -1,0 +1,14 @@
+dev: true
+content:
+  - ./site
+live-reload:
+  interval: 100
+  debounce: 200
+  patterns:
+    - ""
+  endpoint: ""
+  reload-page-on-css: false
+
+db:
+  sqlite:
+
