@@ -1,0 +1,12 @@
+name: GetPlayerById
+params:
+  name: string
+mapping:
+  id: string
+  name: string
+cache:
+  key: "name-"
+triggers:
+  - onUpdateUsers
+query: >
+  SELECT * FROM mydatabase WHERE user = :name

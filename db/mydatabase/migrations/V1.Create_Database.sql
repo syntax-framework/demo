@@ -1,0 +1,6 @@
+
+
+CREATE table USER
+    NAME VARCHAR
+    EMAIL VARCHAR
+

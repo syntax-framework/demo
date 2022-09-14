@@ -1,6 +1,11 @@
+
+# Informa que está executando em modo desenvolvimento
 dev: true
+
 content:
   - ./site
+
+# Durante o desenvolvimento, permite live-reload
 live-reload:
   interval: 100
   debounce: 200
@@ -9,6 +14,35 @@ live-reload:
   endpoint: ""
   reload-page-on-css: false
 
+# Conexoes com o redis
+redis:
+  my-redis:
+    uri: xpto
+
+# Conexoes de banco de dados SQL
 db:
-  sqlite:
+  mydatabase:
+    engine: sqlite
+
+# Storage de arquivos
+storage:
+  xpto:
+    engine: "S3"
+
+# Configuraçoes de cache
+cache:
+
+# Parametrização de CMS
+cms:
+  enbled: true
+  sites:
+    - blog:
+    - help:
+    - comunity:
+
+#auth:
+#  salt
+#  tttl
+#  controller: minhaController
+
 

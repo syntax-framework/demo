@@ -1,0 +1,13 @@
+name: GetUserById
+source: GetPlayerById
+auth:
+
+params:
+  name: string
+mapping:
+  id: string
+  name: string
+cache:
+  key: "name-"
+url: >
+  SELECT * FROM mydatabase WHERE user = :name

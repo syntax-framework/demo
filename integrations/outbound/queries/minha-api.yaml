@@ -1,0 +1,15 @@
+name: GetUserById
+params:
+  name: string
+  age:
+    type: int
+    validate:
+      - min
+  password: string
+mapping:
+  id: string
+  name: string
+cache:
+  key: "name-"
+url: >
+  SELECT * FROM mydatabase WHERE user = :name

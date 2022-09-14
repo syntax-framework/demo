@@ -1,0 +1,5 @@
+name: SendEmailsToUsers
+when:
+  name: my-trigger
+commands:
+  -

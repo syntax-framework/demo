@@ -3,14 +3,20 @@ root = true
 [*]
 charset = utf-8
 end_of_line = lf
-indent_size = 4
-indent_style = space
-insert_final_newline = true
 max_line_length = 120
 tab_width = 4
+insert_final_newline = true
 trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
 
 
-[**.{js,css,go, htm, html, yaml, yml}]
+[**.{js,css, htm, html, yaml, yml}]
 indent_size = 2
 tab_width = 2
+max_line_length = 120
+
+
+[{Makefile,go.mod,go.sum,*.go,.gitmodules}]
+indent_style = tab
+indent_size = 4
